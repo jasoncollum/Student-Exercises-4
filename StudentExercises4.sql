@@ -13,32 +13,32 @@
 
 -- CREATE TABLE Cohort (
 --     Id INTEGER PRIMARY KEY NOT NULL IDENTITY,
---     CohortName TEXT NOT NULL
+--     CohortName VARCHAR(55) NOT NULL
 -- );
 
 -- CREATE TABLE Student (
 --     Id INTEGER PRIMARY KEY NOT NULL IDENTITY,
---     FirstName TEXT NOT NULL,
---     LastName TEXT NOT NULL,
---     SlackHandle TEXT NOT NULL,
+--     FirstName VARCHAR(55) NOT NULL,
+--     LastName VARCHAR(55) NOT NULL,
+--     SlackHandle VARCHAR(55) NOT NULL,
 --     CohortId INTEGER NOT NULL,
 --     CONSTRAINT FK_Student_Cohort FOREIGN KEY(CohortId) REFERENCES Cohort(Id)
 -- );
 
 -- CREATE TABLE Instructor (
 --     Id INTEGER PRIMARY KEY NOT NULL IDENTITY,
---     FirstName TEXT NOT NULL,
---     LastName TEXT NOT NULL,
---     SlackHandle TEXT NOT NULL,
+--     FirstName VARCHAR(55) NOT NULL,
+--     LastName VARCHAR(55) NOT NULL,
+--     SlackHandle VARCHAR(55) NOT NULL,
 --     CohortId INTEGER NOT NULL,
---     Specialty TEXT NOT NULL,
+--     Specialty VARCHAR(55) NOT NULL,
 --     CONSTRAINT FK_Instructor_Cohort FOREIGN KEY(CohortId) REFERENCES Cohort(Id)
 -- );
 
 -- CREATE TABLE Exercise (
 --     Id INTEGER PRIMARY KEY NOT NULL IDENTITY,
---     ExerciseName TEXT NOT NULL,
---     ExerciseLanguage TEXT NOT NULL
+--     ExerciseName VARCHAR(55) NOT NULL,
+--     ExerciseLanguage VARCHAR(55) NOT NULL
 -- );
 
 -- CREATE TABLE Assignment (
